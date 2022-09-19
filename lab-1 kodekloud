@@ -1,0 +1,23 @@
+check running container
+$ docker ps
+
+// check all running and not running container
+$ docker ps -a
+
+// stop docker
+$ docker stop nginx-1
+
+// delete docker
+$ docker rm $(docker ps -aq)
+
+// delete image
+$ docker rmi ubuntu
+
+// pull image to be localy 
+$ docker pull nginx-1
+
+// run docker name it webapp from image nginx-1
+$ docker run --name webapp -d nginx-1
+
+// delete all images
+$ docker rmi $(docker images -a -q )
