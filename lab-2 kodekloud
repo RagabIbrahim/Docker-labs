@@ -1,0 +1,11 @@
+// first some simple question 
+// docker running
+$ docker ps
+
+// extract some knowledge like the image container base on , the port , the name
+
+// Run an instance of kodekloud/simple-webapp with a tag blue and map port 8080 on the container to 38282 on the host.
+
+$ docker run -p 38282:8080 kodekloud/simple-webapp:blue
+
+// above command show the tag
